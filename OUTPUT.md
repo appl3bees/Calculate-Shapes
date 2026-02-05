@@ -222,9 +222,12 @@ Enter the height for Cylinder 5 as a double:
 10.0
 Do you wish to process another shape?
 n
----
+### Program Output
 
+```text
+================================
 Triangles
+================================
 
 Triangle 1 has sides of:
 Side A: 3
@@ -232,8 +235,9 @@ Side B: 4
 Side C: 5
 The perimeter is 12
 Triangle Properties:
-Right Triangle
-Scalene
+  - Right Triangle
+  - Scalene
+
 
 Triangle 2 has sides of:
 Side A: 4
@@ -241,8 +245,9 @@ Side B: 4
 Side C: 5
 The perimeter is 13
 Triangle Properties:
-Acute
-Isosceles
+  - Acute
+  - Isosceles
+
 
 Triangle 3 has sides of:
 Side A: 1
@@ -250,8 +255,9 @@ Side B: 1
 Side C: 1
 The perimeter is 3
 Triangle Properties:
-Acute
-Equilateral
+  - Acute
+  - Equilateral
+
 
 Triangle 4 has sides of:
 Side A: 1
@@ -259,8 +265,9 @@ Side B: 1
 Side C: 1
 The perimeter is 3
 Triangle Properties:
-Acute
-Equilateral
+  - Acute
+  - Equilateral
+
 
 Triangle 5 has sides of:
 Side A: 5
@@ -268,8 +275,9 @@ Side B: 6
 Side C: 7
 The perimeter is 18
 Triangle Properties:
-Acute
-Scalene
+  - Acute
+  - Scalene
+
 
 Triangle 6 has sides of:
 Side A: 3
@@ -277,44 +285,58 @@ Side B: 7
 Side C: 9
 The perimeter is 19
 Triangle Properties:
-Obtuse
-Scalene
+  - Obtuse
+  - Scalene
+
 
 The total perimeter of all 6 triangles is: 68
 
 My test for equals method
-Triangle 3 and 4 are equal
-Triangle 2 and 6 are not equal
+  - Triangle 3 and 4 are equal
+  - Triangle 2 and 6 are not equal
 
+
+================================
 Cylinders
+================================
 
-Cylinder 1 has a radius of 2
-Cylinder 1 has a height of 4
-Cylinder 1 has a surface area of 75.4
-Cylinder 1 has a volume of 50.27
+Cylinder 1:
+  Radius: 2
+  Height: 4
+  Surface Area: 75.4
+  Volume: 50.27
 
-Cylinder 2 has a radius of 4
-Cylinder 2 has a height of 8
-Cylinder 2 has a surface area of 301.59
-Cylinder 2 has a volume of 402.12
 
-Cylinder 3 has a radius of 99
-Cylinder 3 has a height of 99
-Cylinder 3 has a surface area of 123163
-Cylinder 3 has a volume of 3048284.21
+Cylinder 2:
+  Radius: 4
+  Height: 8
+  Surface Area: 301.59
+  Volume: 402.12
 
-Cylinder 4 has a radius of 2
-Cylinder 4 has a height of 4
-Cylinder 4 has a surface area of 75.4
-Cylinder 4 has a volume of 50.27
 
-Cylinder 5 has a radius of 5
-Cylinder 5 has a height of 10
-Cylinder 5 has a surface area of 471.24
-Cylinder 5 has a volume of 785.4
+Cylinder 3:
+  Radius: 99
+  Height: 99
+  Surface Area: 123163
+  Volume: 3048284.21
 
-Total surface area for all 5 cylinders is 124086.63
+
+Cylinder 4:
+  Radius: 2
+  Height: 4
+  Surface Area: 75.4
+  Volume: 50.27
+
+
+Cylinder 5:
+  Radius: 5
+  Height: 10
+  Surface Area: 471.24
+  Volume: 785.4
+
+
+Total surface area for all 5 cylinders is: 124086.63
 
 My test for equals method
-Cylinders 4 and 5 are not equal
-Cylinders 1 and 4 are equal
+  - Cylinders 4 and 5 are not equal
+  - Cylinders 1 and 4 are equal
