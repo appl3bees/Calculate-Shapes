@@ -2,6 +2,8 @@
 
 This was my final project for my Computer Science 1 class
 
+_**Considering how old this project is, I still feel very proud of it. There are countless ways it could be improved, but from a basic standpoint it’s clean, and the flow of the code is solid, in my opinion.It’s been a while since I last programmed like this, and making this old project my first commit to GitHub made me want to seriously get back into programming. I miss it—and I love it.**_
+
 CSC122 – Fall/2022
 Project # 1 
 
