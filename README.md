@@ -150,3 +150,31 @@ o	Print the values as shown in the Test Run.
 •        Output must be labeled, aligned, and reasonably well-spaced.  Test your program using the data that I have provided in the test run.  Copy and paste your output to the bottom of your ShapesDemo class.
 •	Analyze the test run.  Take note of the data entered by the user and the corresponding output.  This will help you understand the requirements and answer many of the questions you may have regarding the application.
 
+
+
+
+
+Submit with your project   Name:    ____________________________________
+Assessment Rubric for this programming project
+
+1.     Test Plan                     (10 pts)
+2.     Documentation           (25 pts)
+a.       Name, date, and class description provided
+b.       UML Diagram
+c.       Did you use meaningful identifier names and provide in-line comments for each class member declaration 
+d.       Does each class method have formal pre-conditions and post-conditions clearly stated?
+
+3.     Class Organization and Program Structure   (15 pts)
+a.       Did you choose appropriate types for data members?
+b.       Are your methods single-purposed and appropriate (correct parameters and return types)?
+c.       Did you apply visibility modifiers correctly?
+ 
+
+4.     Methodology  (40 pts)
+a.       Is the functionality of each method clear, concise, correct and efficient? Does it correctly perform its task?
+b.       Are the control structures coded efficiently? 
+c.       Does the application correctly use objects to complete its task (with majority of work done in the classes )?
+
+5.  Output    ( 10 pts)
+a.       Is the output correct?
+b.       Is the output neatly formatted?
