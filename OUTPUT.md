@@ -1,16 +1,14 @@
 # Project Output & Requirement Verification
 
-This document presents the program output for **CSC122 – Project #1 (Fall 2022)** and explains how the output satisfies the assignment requirements. 
-The output shown is based on the instructor-provided test run data and demonstrates correct functionality, validation, and formatting.
+This document presents the program output for **CSC122 – Project #1 (Fall 2022)** and explains how the output satisfies the assignment requirements. The output shown is based on the instructor-provided test run data and demonstrates correct functionality, validation, and formatting.
 
 ---
 
 ## Program Execution Overview
 
-The application allows the user to dynamically create **Triangle** and **Cylinder** objects via console input. 
-Objects are stored in resizable arrays and evaluated after input is complete. The program then reports detailed properties, calculated values, and aggregate totals.
+The application allows the user to dynamically create **Triangle** and **Cylinder** objects via console input. Objects are stored in resizable arrays and evaluated after input is complete. The program then reports detailed properties, calculated values, and aggregate totals.
 
-The application follows the required flow:
+The program follows the required flow:
 - User selects a shape type (Triangle or Cylinder)
 - Inputs required dimensions
 - Objects are validated, instantiated, and stored
@@ -19,6 +17,7 @@ The application follows the required flow:
 ---
 
 ## Triangle Output
+
 For each Triangle object created, the following information is displayed:
 - Side lengths (A, B, C)
 - Calculated perimeter
@@ -29,26 +28,28 @@ For each Triangle object created, the following information is displayed:
 ### Validation Behavior
 - If invalid side lengths are entered (negative values or values that do not form a valid triangle), all sides are reset to **1** as required.
 - The triangle validation rules correctly enforce the triangle inequality theorem.
+- Side order does not affect triangle classification.
 
-### Example Observations
-- Triangle `3-4-5` is correctly identified as **Right** and **Scalene**
-- Invalid triangles are safely corrected and reported as **Equilateral (1,1,1)**
-- Triangle types are detected regardless of the order in which sides are entered
+### Observations
+- Triangle `3-4-5` is correctly identified as **Right** and **Scalene**.
+- Invalid triangles are safely corrected and classified as **Equilateral (1,1,1)**.
+- All valid triangle types are detected correctly.
 
 ---
 
 ## Triangle Aggregates & Equality Testing
-- The **total perimeter of all Triangle objects** is accumulated and printed
-- The `equals()` method compares Triangle objects by perimeter
-- Sample output confirms:
-  - Triangle 3 and Triangle 4 are equal
-  - Triangle 2 and Triangle 6 are not equal
 
-This verifies correct implementation of static accumulators and equality logic.
+- The **total perimeter of all Triangle objects** is accumulated and printed.
+- The `equals()` method compares Triangle objects by perimeter.
+
+**Results:**
+- Triangle 3 and Triangle 4 are equal.
+- Triangle 2 and Triangle 6 are not equal.
 
 ---
 
 ## Cylinder Output
+
 For each Cylinder object created, the following information is displayed:
 - Radius
 - Height
@@ -56,56 +57,46 @@ For each Cylinder object created, the following information is displayed:
 - Calculated volume
 
 ### Validation Behavior
-- If a radius or height is zero or negative, both values are set to **99** as required
-- Invalid input does not interrupt program execution
+- If a radius or height is zero or negative, both values are set to **99** as required.
+- Invalid input does not interrupt program execution.
 
-### Surface Area Calculations
+### Calculations
 - Curved surface area
 - Base surface area
 - Total surface area
 
-All values are calculated using the required formulas and displayed with appropriate numeric formatting.
+All values are calculated using the required formulas and displayed with consistent numeric formatting.
 
 ---
 
 ## Cylinder Aggregates & Equality Testing
-- The **total surface area of all Cylinder objects** is accumulated and printed
-- The `equals()` method compares Cylinder objects by total surface area
-- Sample output confirms:
-  - Cylinders 1 and 4 are equal
-  - Cylinders 4 and 5 are not equal
 
-This verifies correct aggregation and object comparison behavior.
+- The **total surface area of all Cylinder objects** is accumulated and printed.
+- The `equals()` method compares Cylinder objects by total surface area.
+
+**Results:**
+- Cylinders 1 and 4 are equal.
+- Cylinders 4 and 5 are not equal.
 
 ---
 
 ## Output Formatting & Readability
+
 The output:
-- Is clearly labeled and logically grouped
-- Separates Triangle and Cylinder results
-- Aligns with the instructor-provided sample output
-- Is spaced for readability and easy verification
+- Is clearly labeled and logically grouped.
+- Separates Triangle and Cylinder results.
+- Matches the instructor-provided sample output.
+- Is spaced for readability and easy verification.
 
 This satisfies the rubric requirement that output be **correct, labeled, aligned, and neatly formatted**.
 
 ---
 
-## Final Notes
-This project demonstrates:
-- Correct object-oriented design
-- Safe handling of invalid input
-- Proper use of static data members
-- Clean separation of responsibilities between classes
-- Output that fully satisfies the assignment specifications
+## Full Test Run
 
-Revisiting this project highlights strong foundational design decisions and reinforces best practices in structured, object-oriented programming.
+### User Input
 
----
-
-Test Run:
-
-Input from user
-
+```text
 Create a Shape
 Enter 1 for cylinder or 2 for a triangle
 1. Cylinder
@@ -114,7 +105,7 @@ Enter 1 for cylinder or 2 for a triangle
 Enter an integer dimension for side a of triangle 1: 3
 Enter an integer dimension for side b of triangle 1: 4
 Enter an integer dimension for side c of triangle 1: 5
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -125,7 +116,7 @@ Enter 1 for cylinder or 2 for a triangle
 Enter an integer dimension for side a of triangle 2: 4
 Enter an integer dimension for side b of triangle 2: 4
 Enter an integer dimension for side c of triangle 2: 5
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -133,11 +124,11 @@ Enter 1 for cylinder or 2 for a triangle
 1. Cylinder
 2. Triangle
 1
-Enter the radius for Cylinder 1 as a double: 
+Enter the radius for Cylinder 1 as a double:
 2
-Enter the height for Cylinder 1 as a double: 
+Enter the height for Cylinder 1 as a double:
 4.0
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -145,17 +136,12 @@ Enter 1 for cylinder or 2 for a triangle
 1. Cylinder
 2. Triangle
 1
-Enter the radius for Cylinder 2 as a double: 
+Enter the radius for Cylinder 2 as a double:
 4.0
-Enter the height for Cylinder 2 as a double: 
+Enter the height for Cylinder 2 as a double:
 8.0
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
-
-
-
-
-
 
 Create a Shape
 Enter 1 for cylinder or 2 for a triangle
@@ -165,7 +151,7 @@ Enter 1 for cylinder or 2 for a triangle
 Enter an integer dimension for side a of triangle 3: 1
 Enter an integer dimension for side b of triangle 3: 1
 Enter an integer dimension for side c of triangle 3: 2
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -176,7 +162,7 @@ Enter 1 for cylinder or 2 for a triangle
 Enter an integer dimension for side a of triangle 4: -3
 Enter an integer dimension for side b of triangle 4: 4
 Enter an integer dimension for side c of triangle 4: 5
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -184,11 +170,11 @@ Enter 1 for cylinder or 2 for a triangle
 1. Cylinder
 2. Triangle
 1
-Enter the radius for Cylinder 3 as a double: 
+Enter the radius for Cylinder 3 as a double:
 -2
-Enter the height for Cylinder 3 as a double: 
+Enter the height for Cylinder 3 as a double:
 -4
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -196,19 +182,12 @@ Enter 1 for cylinder or 2 for a triangle
 1. Cylinder
 2. Triangle
 1
-Enter the radius for Cylinder 4 as a double: 
+Enter the radius for Cylinder 4 as a double:
 2
-Enter the height for Cylinder 4 as a double: 
+Enter the height for Cylinder 4 as a double:
 4
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
-
-
-
-
-
-
-
 
 Create a Shape
 Enter 1 for cylinder or 2 for a triangle
@@ -218,7 +197,7 @@ Enter 1 for cylinder or 2 for a triangle
 Enter an integer dimension for side a of triangle 5: 5
 Enter an integer dimension for side b of triangle 5: 6
 Enter an integer dimension for side c of triangle 5: 7
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -229,7 +208,7 @@ Enter 1 for cylinder or 2 for a triangle
 Enter an integer dimension for side a of triangle 6: 3
 Enter an integer dimension for side b of triangle 6: 7
 Enter an integer dimension for side c of triangle 6: 9
-Do you wish to process another shape? 
+Do you wish to process another shape?
 y
 
 Create a Shape
@@ -237,15 +216,13 @@ Enter 1 for cylinder or 2 for a triangle
 1. Cylinder
 2. Triangle
 1
-Enter the radius for Cylinder 5 as a double: 
+Enter the radius for Cylinder 5 as a double:
 5.0
-Enter the height for Cylinder 5 as a double: 
+Enter the height for Cylinder 5 as a double:
 10.0
-Do you wish to process another shape? 
+Do you wish to process another shape?
 n
-
-
-Output based on user input
+---
 
 Triangles
 
@@ -309,9 +286,8 @@ My test for equals method
 Triangle 3 and 4 are equal
 Triangle 2 and 6 are not equal
 
-
-
 Cylinders
+
 Cylinder 1 has a radius of 2
 Cylinder 1 has a height of 4
 Cylinder 1 has a surface area of 75.4
@@ -337,7 +313,7 @@ Cylinder 5 has a height of 10
 Cylinder 5 has a surface area of 471.24
 Cylinder 5 has a volume of 785.4
 
-Total surface area for all 5 cylinders is 124086.63[rv3.1]
+Total surface area for all 5 cylinders is 124086.63
 
 My test for equals method
 Cylinders 4 and 5 are not equal
