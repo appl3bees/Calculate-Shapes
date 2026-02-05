@@ -80,8 +80,8 @@ Note 3:
 Your Triangle and Cylinder classes MUST be written according to these specifications.  Do not vary from those specs.   
 
 
-UML Diagram: https://imgur.com/a/hSapOhV
-
+**UML Diagram: https://imgur.com/a/hSapOhV
+**
 
 
 **Class Cylinder **
@@ -151,7 +151,7 @@ o	Print the values as shown in the Test Run.
 •	Analyze the test run.  Take note of the data entered by the user and the corresponding output.  This will help you understand the requirements and answer many of the questions you may have regarding the application.
 
 
-
+**Equals Class Requirements: https://imgur.com/a/YQWAO3g**
 
 
 Submit with your project   Name:    ____________________________________
